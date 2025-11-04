@@ -1,6 +1,6 @@
 import Produto from "../../components/cardapio/Produto";
 
-export default function Cardapio() {
+export default function CardapioPage() {
   return (
     <div>
       <Produto /> 
