@@ -1,0 +1,53 @@
+# .github/workflows/create-pr.yml
+
+name: 'Create Pull Request'
+
+on:
+  push:
+    branches-ignore:
+      - 'main'
+      - 'master'
+
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: 'Checkout da branch'
+        uses: actions/checkout@v4
+
+      - name: 'Verifica se já existe um PR para esta branch'
+        id: check_pr
+        run: |
+          # Lista PRs abertos que têm esta branch como 'head'
+          # A variável github.ref_name contém o nome da branch que disparou o workflow
+          PR_COUNT=$(gh pr list \
+            --head "${{ github.ref_name }}" \
+            --json number \
+            --jq 'length')
+            
+          echo "PR_COUNT=$PR_COUNT" >> $GITHUB_ENV
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 'Cria o Pull Request'
+        # Só executa este passo se o passo anterior (check_pr)
+        # retornou um PR_COUNT igual a '0'
+        if: env.PR_COUNT == '0'
+        run: |
+          gh pr create \
+            --base main \
+            --head "${{ github.ref_name }}" \
+            --title "PR: ${{ github.ref_name }}" \
+            --body "Este PR foi aberto automaticamente pelo GitHub Actions após um push."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 'PR já existe'
+        if: env.PR_COUNT != '0'
+        run: |
+          echo "Um Pull Request para a branch '${{ github.ref_name }}' já existe."
