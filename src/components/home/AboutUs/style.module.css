@@ -1,0 +1,36 @@
+.section {
+  margin: 6rem 0; /* my-24 */
+  background-color: #0a0a0a; /* bg-gray-950 */
+  padding: 4rem 0; /* py-16 */
+}
+
+.container {
+  max-width: 56rem; /* max-w-4xl */
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+.title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  letter-spacing: -0.015em; /* tracking-tight */
+  color: white;
+}
+
+.paragraph {
+  margin-top: 1.5rem; /* mt-6 */
+  font-size: 1.125rem; /* text-lg */
+  color: #d1d5db; /* text-gray-300 */
+  line-height: 1.6;
+}
+
+.paragraph + .paragraph {
+  margin-top: 1rem; /* mt-4 */
+}

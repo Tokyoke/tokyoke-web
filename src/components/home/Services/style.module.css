@@ -1,0 +1,123 @@
+.section {
+  max-width: 1280px;
+  margin: 4rem auto; /* my-16 */
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 0 1.5rem;
+  }
+}
+
+.title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* CARD BASE */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0a0a0a; /* bg-gray-950 */
+  border: 1px solid #1f2937; /* border-gray-800 */
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  color: #d1d5db;
+  height: 100%;
+}
+
+/* CARD VARIANT (reservas em destaque) */
+.cardHighlight {
+  border: 2px solid #dc2626; /* border-red-600 */
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.2); /* shadow-red-900/20 */
+}
+
+/* CARD HEADER */
+.cardHeader {
+  margin-bottom: 1rem;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.cardDescription {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* CARD CONTENT */
+.cardContent {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* CARD FOOTER */
+.cardFooter {
+  display: flex;
+  justify-content: center;
+}
+
+/* BUTTONS */
+.button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+}
+
+/* variant="outline" */
+.buttonOutline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: white;
+}
+
+.buttonOutline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* variant="solid" red */
+.buttonPrimary {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+}
+
+.buttonPrimary:hover {
+  background-color: #b91c1c;
+}
