@@ -1,4 +1,4 @@
-# 🎤 Tokyokê - Karaokê
+# 🎤 Tokyokê - Karaokê Web
 ---
 
 Uma plataforma web para promover, agilizar e automatizar as necessidades de um karaokê.
