@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-import { produtoCardapios, nomeTabelas } from "../produtos/produtos";
+import { produtoCardapios, nomeTabelas } from "../_produtos/produtos";
 import ConteudoCardapio from "../ConteudoCardapio";
 import { useState } from "react";
 
