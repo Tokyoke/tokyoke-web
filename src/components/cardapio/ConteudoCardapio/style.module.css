@@ -1,0 +1,67 @@
+/*Conteudo Cardapio*/
+.cardapioContainer {
+    height: 93%;
+    width: 100%;
+}
+
+.tituloContainer {
+    margin-top: 3%;
+    color: red;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    min-height: 90%;
+    margin-top: 1%;
+    padding-top: 4%;
+    background-color: #0c1015;
+    border: 1px solid #1f2937;
+    border-radius: 15px;
+}
+
+/*ItemCardapio*/
+.itemCardapio {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 4%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #1f2937;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.itemCardapio:last-child {
+    border-bottom: none;
+}
+
+.itemInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemNome {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.itemDescricao {
+    opacity: 60%;
+    font-size: 0.9rem;
+}
+
+.itemPreco {
+    font-size: 1.13rem;
+    color: red;
+    font-weight: 500;
+}
+
+@media (max-width: 1000px){
+    .tituloContainer {
+        margin-top: 6%;
+        margin-bottom: 6%;
+        text-align: start;
+    }
+}

@@ -1,0 +1,56 @@
+.cardapio {
+    min-height: 60%;
+    width: 50%;
+}
+
+.cardapio:last-child {
+    margin-bottom: 10%;
+}
+
+.navTabelas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    background-color: #1f2937;
+    border-radius: 10px;
+}
+
+.botaoNavTabelas {
+    height: 4.5vh;
+    width: 34%;
+    background-color: #1f2937;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.botaoNavTabelas:hover {
+    background-color: white;
+    color: red;
+    font-weight: 900;
+}
+
+.botaoNavTabelas:focus {
+    background-color: white;
+    color: red;
+    font-weight: 900;
+}
+
+@media (max-width: 1000px){
+    .cardapio {
+    min-height: 60%;
+    width: 85%;
+}
+
+    .botaoNavTabelas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-wrap: nowrap;
+        height: 7vh;
+        font-size: 0.7rem;
+}
+
+
+}
