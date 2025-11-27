@@ -18,14 +18,14 @@ export default function Header() {
           <Link to="/cardapio">
             <button className={styles.navButton}>Cardápio</button>
           </Link>
-          <Link to="/admin">
-            <button className={styles.navButton}>Admin</button>
-          </Link>
           <Link to="/reservas">
             <button className={styles.navButton}>Reservas</button>
           </Link>
           <Link to="/perfil">
             <button className={styles.navButton}>Perfil</button>
+          </Link>
+          <Link to="/admin">
+            <button className={styles.navButton}>Admin</button>
           </Link>
         </nav>
 
