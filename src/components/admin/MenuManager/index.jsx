@@ -1,6 +1,6 @@
 // MenuManager.jsx
 import React, { useState } from "react";
-import styles from "./MenuManager.module.css";
+import styles from "./styles.module.css";
 
 // Dados mockados para simular a leitura (READ) dos itens.
 const initialMenuItems = {

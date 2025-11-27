@@ -42,8 +42,6 @@ export default function AdminPage() {
 
   return (
     <div className={styles.wrapper}>
-      <AdminSidebar />
-
       <div className={styles.content}>
         <h1 className={styles.title}>Painel Administrativo</h1>
 
