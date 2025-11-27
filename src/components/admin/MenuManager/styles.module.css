@@ -1,0 +1,158 @@
+/* MenuManager.module.css */
+
+.container {
+    padding: 20px 40px;
+    color: #f5f5f5;
+    width: 100%;
+}
+
+/* Header e Título */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.breadcrumb {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.pageTitle {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 5px 0 0 0;
+}
+
+/* Botão Adicionar Item (CREATE) */
+.addButton {
+    background-color: #e50914; /* Vermelho de destaque */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.addButton:hover {
+    background-color: #c00812;
+}
+
+.plusIcon {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+
+/* Abas de Categoria */
+.tabsContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tabButton {
+    background-color: #282c34; /* Fundo escuro levemente diferente */
+    color: #aaa;
+    border: 1px solid #444;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.tabButton:hover {
+    color: #fff;
+    border-color: #e50914;
+}
+
+.activeTab {
+    background-color: #e50914;
+    color: white;
+    border-color: #e50914;
+}
+
+/* Tabela */
+.menuTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #1c1f24; /* Fundo da Tabela */
+    border-radius: 8px;
+    overflow: hidden; /* Para garantir o arredondamento */
+}
+
+.menuTable th, .menuTable td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.menuTable thead tr {
+    background-color: #17191d; /* Fundo do cabeçalho */
+    color: #aaa;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.menuTable tbody tr {
+    border-bottom: 1px solid #282c34; /* Linha divisória sutil */
+}
+
+.menuTable tbody tr:last-child {
+    border-bottom: none;
+}
+
+.menuTable tbody tr:hover {
+    background-color: #24272c; /* Efeito de hover na linha */
+}
+
+/* Colunas específicas */
+.columnName {
+    width: 50%;
+    font-weight: 600;
+}
+
+.columnPrice {
+    width: 30%;
+}
+
+.columnActions {
+    width: 20%;
+    text-align: right;
+}
+
+/* Botões de Ação (Editar e Excluir) */
+.actionButton {
+    background: none;
+    border: 1px solid #444;
+    color: #aaa;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.actionButton:hover {
+    background-color: #333;
+    border-color: #fff;
+    color: #fff;
+}
+
+.deleteButton {
+    border: 1px solid #e50914;
+    color: #e50914;
+}
+
+.deleteButton:hover {
+    background-color: #e50914;
+    color: white;
+}
