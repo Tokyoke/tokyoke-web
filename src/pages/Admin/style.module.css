@@ -1,0 +1,95 @@
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #07060a; /* dark background */
+  color: #e6eef8;
+}
+
+.content {
+  flex: 1;
+  padding: 32px;
+}
+
+.title {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  color: #fff;
+}
+
+.cardsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.recentSection {
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.small {
+  margin-top: 4px;
+  color: #b9c3cf;
+}
+
+.table {
+  width: 100%;
+  margin-top: 16px;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 12px 8px;
+  color: #aab7c4;
+}
+
+.table td {
+  padding: 12px 8px;
+  border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+.clientName {
+  font-weight: 600;
+}
+
+.clientEmail {
+  font-size: 12px;
+  color: #98a4b2;
+}
+
+.status {
+  background: rgba(255,255,255,0.06);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.confirm {
+  background: #ecfdf5;
+  color: #065f46;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel {
+  background: #fee2e2;
+  color: #7f1d1d;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.view {
+  color: #9fb0c4;
+}

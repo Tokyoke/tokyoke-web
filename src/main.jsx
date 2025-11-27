@@ -6,6 +6,7 @@ import Header from "./components/_global/Header";
 import Footer from "./components/_global/Footer";
 import HomePage from "./pages/Home";
 import CardapioPage from "./pages/Cardapio";
+import AdminPage from "./pages/Admin";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/cardapio" element={<CardapioPage />} />
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

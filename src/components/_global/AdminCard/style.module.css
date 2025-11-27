@@ -1,0 +1,27 @@
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 16px;
+  border-radius: 12px;
+  color: #dce9f5;
+}
+
+.highlight {
+  border: 2px solid #ef4444;
+}
+
+.cardTitle {
+  font-size: 13px;
+  color: #98a4b2;
+}
+
+.cardValue {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.cardSubtitle {
+  margin-top: 6px;
+  color: #9fb0c4;
+  font-size: 13px;
+}
