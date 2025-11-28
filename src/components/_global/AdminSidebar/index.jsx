@@ -13,9 +13,9 @@ export default function AdminSidebar() {
 
       <nav className={styles.nav}>
         <Link to="/admin" className={styles.navLink}>Dashboard</Link>
-        <Link to="#" className={styles.navLink}>Reservas</Link>
-        <Link to="#" className={styles.navLink}>Cardápio</Link>
-        <Link to="#" className={styles.navLink}>Usuários</Link>
+        <Link to="/admin/reservas" className={styles.navLink}>Reservas</Link>
+        <Link to="/admin/cardapio" className={styles.navLink}>Cardápio</Link>
+        <Link to="/admin/users" className={styles.navLink}>Usuários</Link>
       </nav>
 
       <div className={styles.footerLink}>

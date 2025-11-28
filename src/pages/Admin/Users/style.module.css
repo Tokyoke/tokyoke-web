@@ -1,0 +1,115 @@
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #07060a;
+  color: #e6eef8;
+}
+
+.content {
+  flex: 1;
+  padding: 32px;
+}
+
+.title {
+  font-size: 28px;
+  margin: 0 0 18px 0;
+  color: #fff;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.infoBox h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.infoBox p {
+  margin: 6px 0 0 0;
+  color: #98a4b2;
+  font-size: 13px;
+}
+
+.searchWrap {
+  width: 360px;
+}
+
+.search {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
+  color: #e6eef8;
+}
+
+.tableWrap {
+  margin-top: 18px;
+  background: rgba(255,255,255,0.02);
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 12px 8px;
+  color: #aab7c4;
+}
+
+.table td {
+  padding: 14px 8px;
+  border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+.clientName {
+  font-weight: 600;
+}
+
+.clientEmail {
+  font-size: 13px;
+  color: #9fb0c4;
+}
+
+.badgeActive {
+  background: #10b981;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.badgeBlocked {
+  background: #ef4444;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.editBtn {
+  background: #fff;
+  border: none;
+  color: #0b0b0b;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.delBtn {
+  background: #ef4444;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
